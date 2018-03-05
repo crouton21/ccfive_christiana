@@ -1,0 +1,9 @@
+<h3>Send a Message</h3>
+
+<input type="text" placeholder="name" ng-model="mc.newMessage.name">
+<input type="text" placeholder="message" ng-model="mc.newMessage.message">
+<button ng-click="mc.newMessageSubmitted(mc.newMessage)">Enter</button>
+<br><br>
+<div ng-repeat="message in mc.messages.allMessages">
+    <b>{{message.name}}</b>: {{message.message}}
+</div>

@@ -8,8 +8,15 @@
     <script src="vendors/angular.min.js"></script>
     <script src="vendors/angular-route.min.js"></script>
     <script src="scripts/myClient.js"></script>
+    <script src="scripts/services/message.service.js"></script>
+    <script src="scripts/controllers/message.controller.js"></script>
 </head>
-<body>
-    
+<body ng-app="ccApp">
+    <nav ng-hide="true">
+    <a href="/#!message">Messages</a>
+    </nav>
+    <main ng-view>
+
+    </main>
 </body>
 </html>
